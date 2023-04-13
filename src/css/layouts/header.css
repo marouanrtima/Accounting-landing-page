@@ -1,0 +1,54 @@
+.header-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.inner-header-container,
+.text-logo-header {
+  display: flex;
+  align-items: center;
+}
+
+.text-logo-header {
+  text-transform: capitalize;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.text-logo-header h1 {
+  font-size: 1.2rem;
+}
+
+.text-logo-header span {
+  color: #2563eb;
+}
+
+.nav-header {
+  margin-left: 4rem;
+  padding-top: 0.68rem;
+  padding-bottom: 0.81rem;
+}
+
+.nav-header .nav-link {
+  display: flex;
+}
+
+.nav-header .nav-link li {
+  list-style: none;
+}
+
+.nav-header .nav-link li a,
+.auth-container a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-left: 2.375rem;
+  text-transform: capitalize;
+}
+
+.nav-header .nav-link li:first-child a {
+  margin: 0;
+}

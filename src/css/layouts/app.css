@@ -1,0 +1,39 @@
+:root {
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Lexend", sans-serif;
+  --primary-color: #1c64f2;
+  --secondary-color: #111928;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+button,
+.button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: none;
+  padding: 0.75rem 0.88rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
