@@ -49,10 +49,14 @@
     gap: 1rem;
 }
 
-.watch-vido{
+.watch-video{
  background-color: #ffff;
  border: 1px solid #E5E7EB;
  color: #4B5563;
+ display: grid;
+ grid-template-columns: auto auto;
+ align-items: center;
+ gap: 0.7rem;
 }
 
 .companies-container p:first-child{
@@ -73,7 +77,9 @@
 .companies-container .companies{
     display: grid;
     align-items: center;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: repeat(auto-fill, 140px);
+    align-items: center;
+    justify-content: center;
     gap: 2.62rem;
     padding: 0 2rem;
     margin: 0 2rem;
@@ -86,4 +92,84 @@
     gap: .7rem;
 }
 
+.books-container{
+    background-color: #2765EC;
+    padding: 2rem 0;
+    display: grid;
+    gap: 4.6rem;
+}
+
+.books-container .title-container{
+        text-align: center;
+        color: #FFFFFF;
+        display: grid;
+        gap: .8rem;
+}
+
+.books-container .title-container h2{
+    font-family: var(--secondary-font);
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
+
+.books-container .title p{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+}
+
+.wrapper-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.wrapper-container .taps-container{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.wrapper-container .taps-container .taps{
+    display: grid;
+    gap: 3rem;
+
+/* margin-left: 10rem  */
+}
+
+.wrapper-container  .screenshot{
+    width: ;
+}
+
+
+.wrapper-container  .screenshot img{
+    width: 100%;
+}
+
+.wrapper-container .taps-container .taps .inner-tap{
+color: #FFFFFF;
+display: grid;
+gap: 1rem;
+}
+.wrapper-container .taps-container .taps .inner-tap:first-child{
+    
+    border: 1px solid #4a7bee;
+    padding: 1rem;
+    border-radius: 10px 0 0 10px;
+    background-color: #4a7bee;
+}
+
+.taps-container .taps .inner-tap h3 {
+font-family: var(--secondary-font);
+font-size: 1.25rem;
+font-weight: 500;
+}
+
+.taps-container .taps .inner-tap p{
+    font-family: var(--primary-font);
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 2.1;
+}
 
