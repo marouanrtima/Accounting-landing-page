@@ -174,3 +174,33 @@
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 10px 0px 0px 10px;
 }
+
+.business-tasks{
+  display: grid;
+  gap: 3rem;
+  padding: 5rem 0;
+}
+
+.business-tasks .title-business{
+display: grid;
+gap: 1rem;
+justify-items: center;
+text-align: center;
+}
+
+.business-tasks .title-business h3{
+  font-family: var(--secondary-font);
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #111928;
+  line-height: 2rem;
+}
+
+.business-tasks .title-business p{
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #8f959e;
+  max-width: 605px;
+}
+
