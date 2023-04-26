@@ -196,11 +196,37 @@ text-align: center;
   line-height: 2rem;
 }
 
-.business-tasks .title-business p{
+.business-tasks  .title-business p{
   font-family: var(--primary-font);
   font-size: 1rem;
   line-height: 2rem;
   color: #8f959e;
   max-width: 605px;
+}
+
+  .business-tasks .items-parent {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns:  repeat( auto-fit, minmax(200px, 370px) );
+    justify-content: center;
+    gap: 2.18rem;
+  }
+
+.business-tasks .items-parent .item-child{
+  display: grid;
+  gap: 1rem;
+}
+
+.business-tasks .items-parent .item-child a.active,
+.business-tasks .items-parent .item-child a:hover{
+color: #1c64f2;
+transition: 0.5 ease;
+}
+
+
+.business-tasks .items-parent .item-child a,
+.business-tasks .items-parent .item-child .inner-item{
+  display: grid;
+  gap: 1rem;
 }
 
