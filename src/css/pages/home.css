@@ -178,7 +178,7 @@
 .business-tasks{
   display: grid;
   gap: 3rem;
-  padding: 5rem 0;
+  padding: 6.81rem 0;
 }
 
 .business-tasks .title-business{
@@ -236,6 +236,7 @@ transition: 0.5 ease;
   font-size: 1.25rem;
   line-height: 1.8rem;
 }
+
 .business-tasks p{
   font-family: var(--primary-font);
   font-size: 1rem;
@@ -243,3 +244,17 @@ transition: 0.5 ease;
   color: #374151;
 }
 
+.business-tasks .profitandloss-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: #e2e8f0;
+  border-radius: 30px;
+  padding: 3rem 0;
+  padding-left: 3rem;
+}
+
+.business-tasks .profitandloss-container .inventory{
+  display: grid;
+  justify-content: end;
+}
