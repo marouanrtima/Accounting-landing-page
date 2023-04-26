@@ -206,7 +206,7 @@ text-align: center;
 
   .business-tasks .items-parent {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
+
     grid-template-columns:  repeat( auto-fit, minmax(200px, 370px) );
     justify-content: center;
     gap: 2.18rem;
@@ -228,5 +228,18 @@ transition: 0.5 ease;
 .business-tasks .items-parent .item-child .inner-item{
   display: grid;
   gap: 1rem;
+}
+
+.business-tasks h4{
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+.business-tasks p{
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #374151;
 }
 
