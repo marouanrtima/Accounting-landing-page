@@ -293,3 +293,34 @@ gap: 1rem;
   background-color: #FFFFFF;
   color: #111928;
 }
+
+section.reviews-container{
+  display: grid;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+section.reviews-container .title-reviews{
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  font-weight: 400;
+}
+
+section.reviews-container .title-reviews h4{
+  font-family: var(--primary-font);
+  font-size: 2.37rem;
+  letter-spacing: -1px;
+
+}
+
+section.reviews-container .title-reviews p{
+  max-width: 640px;
+ text-align: center;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  /* font-weight: 400; */
+  color: #4B5563;
+  line-height: 30px;
+}
+
