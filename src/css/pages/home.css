@@ -295,9 +295,12 @@ gap: 1rem;
 }
 
 section.reviews-container{
+  padding: 5rem 0;
+}
+
+.reviews-container .inner-reviews {
   display: grid;
   gap: 2rem;
-  padding: 5rem 0;
 }
 
 section.reviews-container .title-reviews{
@@ -323,4 +326,35 @@ section.reviews-container .title-reviews p{
   color: #4B5563;
   line-height: 30px;
 }
+
+.reviews-container .peopole-reviews{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.reviews-container .peopole-reviews .review{
+  display: grid;
+  gap: 3rem;
+  background-color: #f0ebeb;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+.reviews-container .peopole-reviews .review span{
+  background-color: #1f1f1f;
+  opacity: .1;
+  height: 1px;
+
+}
+
+.reviews-container .review-person{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reviews-container .review-person .avatar{
+  display: grid;
+  justify-content: end;
+}
+
 
