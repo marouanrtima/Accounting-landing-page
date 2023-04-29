@@ -336,7 +336,7 @@ section.reviews-container .title-reviews p{
 .reviews-container .peopole-reviews .review{
   display: grid;
   gap: 3rem;
-  background-color: #f0ebeb;
+  background-color: #f8f8ff;
   border-radius: 10px;
   padding: 2rem 1rem;
 }
@@ -345,6 +345,12 @@ section.reviews-container .title-reviews p{
   opacity: .1;
   height: 1px;
 
+}
+
+.reviews-container .review-person  .person{   
+  display: grid;
+  /* height: max-content;      */
+  gap: 1rem;
 }
 
 .reviews-container .review-person{
