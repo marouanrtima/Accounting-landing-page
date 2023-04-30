@@ -332,6 +332,7 @@ section.reviews-container .title-reviews p{
   grid-template-columns: repeat(3, 1fr);
   gap: 1.75rem 2rem;
 }
+ 
 
 .reviews-container .peopole-reviews .review{
   display: grid;
@@ -341,11 +342,21 @@ section.reviews-container .title-reviews p{
   border-radius: 10px;
   padding: 2rem 1rem;
 }
-.reviews-container .peopole-reviews .review span{
-  background-color: #1f1f1f;
-  opacity: .1;
-  height: 1px;
+ 
+.reviews-container .peopole-reviews .review > p{
+  font-family: var(--primary-font);
+  font-size: 1.06rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.01rem;
+color: #374151;
 
+}
+
+.reviews-container .peopole-reviews .review span{
+  background-color: #F3F4F6;
+  border: 1px solid #ccc;
+height: fit-content;
 }
 
 .reviews-container .review-person  .person{   
@@ -354,14 +365,39 @@ section.reviews-container .title-reviews p{
   gap: 1rem;
 }
 
+
+.reviews-container .review-person h4{
+font-family: var(--secondary-font);
+font-size: 1rem;
+font-weight: 500;
+letter-spacing: 0.02em;
+color: #111928;
+}
+
+.reviews-container .review-person p{
+  color: #9CA3AF;
+  font-family: var(--primary-font);
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+
 .reviews-container .review-person{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
 .reviews-container .review-person .avatar{
   display: grid;
   justify-content: end;
+  align-items: center;
 }
+
+.reviews-container .inner-reviews .peopole-reviews .review .avatar.my-avatar img{
+  border-radius: 50%;
+}
+
+
 
 
