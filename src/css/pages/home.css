@@ -330,13 +330,14 @@ section.reviews-container .title-reviews p{
 .reviews-container .peopole-reviews{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.75rem 2rem;
 }
 
 .reviews-container .peopole-reviews .review{
   display: grid;
   gap: 3rem;
-  background-color: #f8f8ff;
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 2rem 1rem;
 }
