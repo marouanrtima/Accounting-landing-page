@@ -402,6 +402,36 @@ color: #111928;
   border-radius: 50%;
 }
 
+section.pricing{
+  background-color: #10172A;
+  color: #ffffff;
+  padding: 6rem 0;
+}
+
+.pricing-container .title-pricing{
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.pricing-container .title-pricing h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.pricing-container .title-pricing span{
+  background-image: url(/assets/icons/mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pricing-container .title-pricing p{
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.001rem;
+  line-height: 30px;
+}
+
 
 
 

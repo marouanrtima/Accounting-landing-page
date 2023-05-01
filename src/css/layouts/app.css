@@ -12,6 +12,19 @@
   font-family: var(--primary-font);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: var(--secondary-font);
+}
+
+p{
+  font-family: var(--primary-font);
+}
+
 .container {
   max-width: 1200px;
   height: 100%;
