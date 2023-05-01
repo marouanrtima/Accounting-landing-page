@@ -432,6 +432,82 @@ section.pricing{
   line-height: 30px;
 }
 
+.pricing-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 2.18rem;
+}
+
+section.pricing .pricing-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.pricing-cards .card ,  .pricing-cards .card .title-card{
+  display: grid;
+  gap: 1rem;
+  /* max-width: 310px; */
+}
+
+
+.pricing-cards .card{
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.pricing-cards .card.second{
+  background-color: #1C64F2;
+ 
+}
+
+.pricing-cards .card.second .button-card{
+  padding: 1rem 0;
+}
+
+.pricing-cards .card.second .button-card button{
+  background-color: #FFFFFF;
+  color: #111928;
+}
+
+.pricing-cards .card .title-card h2{
+  font-size: 2.82rem;
+  font-weight: 500;
+}
+
+.pricing-cards .card .title-card h4{
+  font-size: 1.12rem;
+  font-weight: 200;
+  letter-spacing: 0.0003rem;
+}
+
+.pricing-cards .card .title-card p{
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.002rem;
+  line-height: 29px;
+}
+
+.pricing-cards .card .button-card button{
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #636977; 
+}
+
+.description-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.description-card p{
+  font-size: .8rem;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.001rem;
+}
+
 
 
 
