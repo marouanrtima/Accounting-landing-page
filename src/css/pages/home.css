@@ -329,7 +329,11 @@ section.reviews-container .title-reviews p{
 
 .reviews-container .peopole-reviews{
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* grid-template-rows: masonry; */
+  align-tracks: stretch;
   gap: 1.75rem 2rem;
 }
  
