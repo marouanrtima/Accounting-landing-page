@@ -520,6 +520,47 @@ font-weight: 400;
   letter-spacing: 0.001rem;
 }
 
+section.asked-container{
+  background-image: url(/assets/images/background-footer.png);
+  background-size: cover;
+  padding: 6rem 0;
+}
+
+.asked-title {
+  display: grid;
+  max-width: 640px;
+  height: auto;
+  gap: 1rem;
+}
+
+.asked-title h3{
+  font-size: 2.37rem;
+  font-weight: 500;
+  line-height: 81px;
+  letter-spacing: 0.001rem;
+  color: #111928;
+}
+
+.asked-title p{
+  font-size: 1.06rem;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.001rem;
+  color: #4B5563;
+
+}
+
+section.asked-container .inner-asked{
+  display: grid;
+  gap: 6rem;
+}
+
+section.asked-container .question-container{
+  display: grid;
+  align-items: start;
+  gap: 1rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
 
 
