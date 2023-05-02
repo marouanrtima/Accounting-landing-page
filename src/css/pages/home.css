@@ -558,8 +558,27 @@ section.asked-container .inner-asked{
 section.asked-container .question-container{
   display: grid;
   align-items: start;
-  gap: 1rem 2rem;
+  gap: 1.25rem 2.18rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.inner-question{
+  display: grid;
+  gap: 1rem;
+}
+
+.inner-question h3{
+  font-size: 1.12rem;
+  font-weight: 500;
+  letter-spacing: 0.003rem;
+  color: #111928;
+}
+
+.inner-question p{
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 25px;
+  color: #374151;
 }
 
 
