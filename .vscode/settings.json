@@ -1,8 +1,4 @@
 {
-    "cSpell.words": [
-        "laravel",
-        "secend",
-        "stamatic",
-        "statickit"
-    ]
+  "cSpell.words": ["laravel", "secend", "stamatic", "statickit"],
+  "liveServer.settings.port": 5501
 }

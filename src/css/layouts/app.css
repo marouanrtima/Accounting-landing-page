@@ -26,7 +26,8 @@ p{
 }
 
 .container {
-  max-width: 1200px;
+  /* ma-width: 1200px; */
+  padding: 0 1rem;
   height: 100%;
   margin: 0 auto;
 }
@@ -50,5 +51,24 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .container{
+      width: 750px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container{
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+      width: 1170px;
+  }
 }
 
