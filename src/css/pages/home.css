@@ -2,6 +2,7 @@
 @import "../layouts/footer.css";
 @import "../layouts/app.css";
 
+
 .accounting-container {
   display: grid;
   gap: 1.3rem;
@@ -77,12 +78,11 @@
 .companies-container .companies {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, 140px);
+  grid-template-columns: repeat(auto-fill, 130px);
   align-items: center;
   justify-content: center;
   gap: 2.62rem;
-  padding: 0 2rem;
-  margin: 0 2rem;
+  padding: 0 5rem;
 }
 
 .companies-container .companies .flex {
