@@ -106,19 +106,33 @@ line-height: 1.2;
 
 .companies-container .companies {
   display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fill, 130px);
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
   gap: 2.62rem;
-  padding: 0 5rem;
+  padding: 0px 3rem;
 }
 
-.companies-container .companies .flex {
+.companies-container .companies .flex{
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 0.7rem;
+  gap: 1rem;
+  /* padding: .5rem 0 .5rem .5rem; */
+}
+
+.companies-container .companies .flex i{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.companies-container .companies .flex i + p{
+  text-transform: capitalize; 
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.companies-container .companies .flex:last-child > i{
+  background-color: #374151;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 .books-container {
@@ -235,11 +249,42 @@ text-align: center;
 
   .business-tasks .items-parent {
     display: grid;
-
-    grid-template-columns:  repeat( auto-fit, minmax(200px, 370px) );
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-content: center;
     gap: 2.18rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
   }
+
+  @media (max-width: 767px) {
+    .business-tasks .title-business{
+      width: 335px;
+      text-align: left;
+      padding-left: 1rem;
+    }
+
+    .business-tasks .title-business h3{
+      font-size: 33px;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: -1px;
+    }
+
+    .business-tasks .title-business p{
+      letter-spacing: -1px;
+      font-size: 17px;
+      color: #111928;
+      font-weight: 400;
+    }
+
+    
+
+    .profit-loss > img{
+      display: none;
+    }
+  }
+
+
 
 .business-tasks .items-parent .item-child{
   display: grid;
@@ -588,7 +633,7 @@ section.asked-container .question-container{
   display: grid;
   align-items: start;
   gap: 1.25rem 2.18rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
 }
 
 .inner-question{
