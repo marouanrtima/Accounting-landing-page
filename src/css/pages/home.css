@@ -43,7 +43,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 840px) {
   .accounting-container{
     justify-content: center;
     justify-items: center;
@@ -65,6 +65,8 @@
 
 .accounting-container .paraghraph{
 line-height: 1.4;
+max-width: 350px;
+padding: .4rem;
 }
 .accounting-container .traitement-paiment > button{
   background-color: #111928;
@@ -170,7 +172,7 @@ line-height: 1.4;
   text-align: center;
   color: #ffffff;
   display: grid;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .books-container .title-container h2 {
@@ -180,30 +182,81 @@ line-height: 1.4;
   line-height: 1.6;
 }
 
-.books-container .title p {
+.books-container .title-container p {
   font-family: var(--primary-font);
-  font-size: 1rem;
+  font-size: 1.02rem;
+  font-weight: 300;
+  letter-spacing: -1px;
 }
 
 @media (max-width: 767px) {
-  .books-container{
-    width: 100%;
-  }
+
   .books-container .title-container{
     text-align: start;
   }
-  .books-container .title-container h2{
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: -2px;
+
+  .books-container .title-container h2 {
+   max-width: 335px;
+   font-size: 2.06rem;
+   font-weight: 400;
+   line-height: 1.4;
+   letter-spacing: -2px;
   }
-
-  .books-container .title p{
-
+  .books-container .title-container p{
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: 0;
   }
 }
 
+.selected-container{
+  display: none;
+}
 
+@media (max-width: 767px){
+.selected-container{
+    display: grid;
+    gap: 1rem;
+}
+
+.selected-container .items-selected{
+  font-size: 1.25;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr  auto auto;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.selected-container .items-selected button:first-of-type{
+background-color: #FFFFFF;
+color: #1C64F2;
+}
+
+.selected-container .items-selected button:not(:first-of-type){
+ color: #FFFFFF;
+ background-color: transparent;
+ opacity: 0.3;
+}
+
+
+.selected-container p{
+  max-width: 355px;
+  font-size: .8rem;
+  font-weight: 100;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.selected-container .images-end img{
+  border-radius: 0.9rem 0 0 0.9rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+}
 
 .grid {
   display: grid;
@@ -218,6 +271,7 @@ line-height: 1.4;
     display: none;
   }
 }
+
 .grid .items-taps {
   display: grid;
   align-items: center;
@@ -706,9 +760,9 @@ section.asked-container .question-container{
   color: #374151;
 }
 
-section.business-tasks , section.pricing, section.reviews-container{
-  display: none;
-}
+  section.business-tasks , section.pricing, section.reviews-container{
+    display: none;
+  }
 
 
 
