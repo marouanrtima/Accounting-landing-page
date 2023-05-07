@@ -9,11 +9,11 @@
   padding: 5rem 0;
 }
 
+
 .title-accounting {
   width: 810px;
   text-align: center;
   margin: 0 auto;
-  /* padding: 3.18rem 0; */
 }
 
 .title-accounting h2,
@@ -25,7 +25,6 @@
 }
 
 
-
 .title-accounting span {
   color: var(--primary-color);
   background-image: url(/assets/icons/victor.svg);
@@ -33,15 +32,45 @@
   background-position: 0.9rem 3rem;
 }
 
-.accounting-container .paraghraph {
+.accounting-container .paraghraph{
   font-size: 1rem;
   font-family: var(--primary-font);
   font-weight: 400;
   line-height: 30px;
   color: #4b5563;
   text-align: center;
-  width: 32rem;
+  max-width: 32rem;
   margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .accounting-container{
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem;
+  }
+
+  .title-accounting {
+   width: 349px;
+  }
+
+  .title-accounting h2,
+  .title-accounting span {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 3.06rem;
+  
+}
+
+.accounting-container .paraghraph{
+line-height: 1.4;
+}
+.accounting-container .traitement-paiment > button{
+  background-color: #111928;
+  color: #ffffff;
+}
+
 }
 
 .traitement-paiment,
@@ -63,33 +92,6 @@
   gap: 0.7rem;
 }
 
-@media (max-width: 767px) {
-  .title-accounting{
-    text-align: center;
-    font-weight: 300;
-    width: 480px;
-    font-size: 49px;
-    padding: 1rem;
-    letter-spacing: -4px;
-}
-.title-accounting h2,
-.title-accounting span{
-line-height: 1.2;
-}
-
-.accounting-container .paraghraph{
-  width: 350px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-.accounting-container .traitement-paiment >  button{
-  background-color: #111928;
-}
-}
-
 .companies-container p:first-child {
   text-align: center;
   font-size: 1rem;
@@ -106,6 +108,7 @@ line-height: 1.2;
 
 .companies-container .companies {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
   gap: 2.62rem;
   padding: 0px 3rem;
@@ -119,21 +122,40 @@ line-height: 1.2;
   /* padding: .5rem 0 .5rem .5rem; */
 }
 
+.companies-container .companies .flex:nth-child(2){
+  margin-left: 2rem;
+}
+
+@media  (min-width: 375px) and (max-width: 800px)  {
+  .companies-container .companies .flex:nth-child(2){
+    margin: 0;
+    }
+}
+
+/* .companies-container .companies .flex:not(.flex:first-child){
+  margin-left: 2rem;
+  } */
+
+
 .companies-container .companies .flex i{
     font-size: 2rem;
     font-weight: bold;
+    color: #374151;
 }
 
 .companies-container .companies .flex i + p{
   text-transform: capitalize; 
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
+  color: #111928;
 }
 .companies-container .companies .flex:last-child > i{
-  background-color: #374151;
-  padding: 0.5rem;
+  background-color: #777;
+  padding: 0.4rem;
   border-radius: 10px;
 }
+
+/* start section books-container */
 
 .books-container {
   background-image: url(/assets/images/background.png);
@@ -162,12 +184,39 @@ line-height: 1.2;
   font-family: var(--primary-font);
   font-size: 1rem;
 }
+
+@media (max-width: 767px) {
+  .books-container{
+    width: 100%;
+  }
+  .books-container .title-container{
+    text-align: start;
+  }
+  .books-container .title-container h2{
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -2px;
+  }
+
+  .books-container .title p{
+
+  }
+}
+
+
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   /* grid-template-columns: repeat(auto-fill, minmax(800px, 1fr)); */
   /* align-items: center;
   justify-content: center; */
+}
+
+@media  (min-width: 375px) and (max-width: 800px)  {
+  .grid{
+    display: none;
+  }
 }
 .grid .items-taps {
   display: grid;
@@ -217,6 +266,8 @@ line-height: 1.2;
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 10px 0px 0px 10px;
 }
+
+/* end section books-container */
 
 .business-tasks{
   display: grid;
@@ -654,6 +705,11 @@ section.asked-container .question-container{
   line-height: 25px;
   color: #374151;
 }
+
+section.business-tasks , section.pricing, section.reviews-container{
+  display: none;
+}
+
 
 
 
