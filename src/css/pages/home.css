@@ -43,6 +43,8 @@
   margin: 0 auto;
 }
 
+/* start media */
+
 @media (max-width: 840px) {
   .accounting-container{
     justify-content: center;
@@ -74,6 +76,8 @@ padding: .4rem;
 }
 
 }
+
+/* end media */
 
 .traitement-paiment,
 .watch-video {
@@ -116,6 +120,7 @@ padding: .4rem;
   padding: 0px 3rem;
 }
 
+
 .companies-container .companies .flex{
   display: grid;
   grid-template-columns: auto 1fr;
@@ -128,15 +133,43 @@ padding: .4rem;
   margin-left: 2rem;
 }
 
+/* start media */
+
+@media (max-width: 375px) {
+  .companies-container .companies {
+    max-width: 375px;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    padding: 0 10px;
+  }
+
+  .companies-container .companies .flex{
+    max-width: 138px;
+    gap: 1rem;
+
+  }
+
+  .companies-container .companies i{
+    font-size: 17px;
+  }
+  .companies-container .companies p{
+    font-size: 17px;
+    font-weight: 200;
+  }
+} 
+
+/* end media */
+
+/* start media */
+
 @media  (min-width: 375px) and (max-width: 800px)  {
   .companies-container .companies .flex:nth-child(2){
     margin: 0;
     }
 }
+/* end media */
 
-/* .companies-container .companies .flex:not(.flex:first-child){
-  margin-left: 2rem;
-  } */
 
 
 .companies-container .companies .flex i{
@@ -168,6 +201,8 @@ padding: .4rem;
   gap: 7rem;
 }
 
+
+
 .books-container .title-container {
   text-align: center;
   color: #ffffff;
@@ -188,15 +223,16 @@ padding: .4rem;
   font-weight: 300;
   letter-spacing: -1px;
 }
-
+/* start media */
 @media (max-width: 767px) {
 
   .books-container .title-container{
+    max-width: 335px;
+    margin-left: 0;
     text-align: start;
   }
 
   .books-container .title-container h2 {
-   max-width: 335px;
    font-size: 2.06rem;
    font-weight: 400;
    line-height: 1.4;
@@ -209,11 +245,15 @@ padding: .4rem;
   }
 }
 
+/* end media */
+
 .selected-container{
   display: none;
 }
 
-@media (max-width: 767px){
+/* start media */
+
+/* @media (max-width: 767px){
 .selected-container{
     display: grid;
     gap: 1rem;
@@ -237,6 +277,7 @@ color: #1C64F2;
  color: #FFFFFF;
  background-color: transparent;
  opacity: 0.3;
+  padding-left: 4rem;
 }
 
 
@@ -256,7 +297,10 @@ color: #1C64F2;
   width: 100%;
 }
 
-}
+
+} */
+
+/* end media */
 
 .grid {
   display: grid;
@@ -288,6 +332,21 @@ color: #1C64F2;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.68rem 0;
 }
+
+/* @media (min-width: 801){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .books-container .grid .overview-photo{
+    display: none;
+  }
+  
+  .taps-container {
+  display: flex;
+  justify-content: space-around;
+}
+} */
 
 .taps-container .tap {
   color: #ffffff;
