@@ -321,21 +321,15 @@ display: grid;
 }
 
 .grid .items-taps .taps-container{
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 
 
 .overview-photo{
-  border: 3px solid red;
-display: flex;
-justify-content: flex-end;
+  
 }
 
-.overview-photo img {
-  max-width: 100%;
-  height: auto;
-}
 
 .taps-container {
   display: grid;
@@ -369,7 +363,7 @@ justify-content: flex-end;
 
 /* end media */
 
-.taps-container .tap {
+/* .taps-container .tap {
   color: #ffffff;
   
   display: grid;
@@ -377,31 +371,31 @@ justify-content: flex-end;
   /* grid-column: 2/4; */
   padding: 1.7rem;
   border-radius: 1rem 0 0 1rem;
-}
+} */
 
-.taps-container .tap h4 {
+/* .taps-container .tap h4 {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: -0.02em;
-}
+} */
 
-.taps-container .tap p {
+/* .taps-container .tap p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
   letter-spacing: -0.01em;
-}
+} */
 
-.taps-container .tap:first-child {
+/* .taps-container .tap:first-child {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 10px 0px 0px 10px;
-}
+} */
 
 /* end section books-container */
 
